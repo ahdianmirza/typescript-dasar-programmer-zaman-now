@@ -12,7 +12,6 @@ describe('Array', function () {
         console.info(hobbies);
         console.info(hobbies[0]);
         console.info(hobbies[1]);
-
         // hobbies[0] = "Main Game";
     })
 
