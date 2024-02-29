@@ -82,5 +82,24 @@ describe ('Interface', () => {
         }
 
         console.info(person.sayHello("Budi"));
+    });
+
+    it ('should support intersection interface', () => {
+        interface HasName {
+            name: string
+        }
+
+        interface HasId {
+            id: string
+        }
+
+        type Domain = HasId & HasName;
+
+        const domain: Domain = {
+            id: "1",
+            name: "Ahdian"
+        }
+
+        console.info(domain);
     })
 })
